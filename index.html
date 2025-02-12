@@ -1,40 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <div></div>
-    <div>
-        <img src="" alt="">
-        <div class="text">
-            <div>
-                <h1>JOSEPH OCHEGO NYABUTO</h1>
-            <p>FRONTEND DEVELOPER | UI/UX DESIGNER | WRITER</p>
-            </div>
-            <div>
-                <svg />
-                "Passionate about building intuitive digital experiences and writing impactful content"
-            </div>
-            <div>
-                <p>12:56:07 <span>UTC</span> </p>
-                <p>Monday, 3rd February 2025</p>
-            </div>
-            <div>
-                <div>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-                <p>ochegoatwork@gmail.com</p>
-            </div>
-            <p>Kericho, Kenyas</p>
-        </div>
-    </div>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Smart Profile</title>
+		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+		<style>
+			body {
+				margin: 0 auto;
+				border: 10px solid white;
+				background-color: rgb(225, 225, 225);
+				height: 100vh;
+				text-align: center;
+			}
+			.page-header {
+				display: flex;
+				width: 100%;
+				justify-content: flex-end;
+				padding: 1rem 2rem;
+			}
+
+			.theme-toggle {
+				display: flex;
+				min-width: fit-content;
+				max-width: max-content;
+				gap: 0.5rem;
+				padding: 0.5rem 1rem;
+				background-color: rgb(217, 217, 217);
+				border-radius: 30px;
+			}
+
+			img {
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="page-header">
+			<div class="theme-toggle">
+				<span>Dark</span>
+				<img src="assets/moon.svg" alt="" />
+			</div>
+		</div>
+		<div>
+			<img src="assets/profile-photo_mobile.png" alt="" />
+			<div class="text">
+				<div>
+					<h1>JOSEPH OCHEGO NYABUTO</h1>
+					<p>FRONTEND DEVELOPER | UI/UX DESIGNER | WRITER</p>
+				</div>
+				<div>
+					<svg />
+					"Passionate about building intuitive digital experiences and
+					writing impactful content"
+				</div>
+				<div>
+					<p>12:56:07 <span>UTC</span></p>
+					<p>Monday, 3rd February 2025</p>
+				</div>
+				<div>
+					<div>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+					<p>ochegoatwork@gmail.com</p>
+				</div>
+				<p>Kericho, Kenyas</p>
+			</div>
+		</div>
+	</body>
 </html>
