@@ -29,8 +29,42 @@
 				background-color: rgb(217, 217, 217);
 				border-radius: 30px;
 			}
+			.profile {
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+			}
 
-			img {
+			.profile-pic {
+				align-self: center;
+				max-width: 50%;
+			}
+
+			.text {
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+				max-width: 80%;
+				margin-inline: auto;
+			}
+
+			.name {
+				font-size: 1.2rem;
+				font-weight: 700;
+			}
+
+			.titles {
+				font-size: 0.7rem;
+			}
+
+			.quote {
+				display: flex;
+				gap: 0.5rem;
+				max-width: 65%;
+				align-self: center;
+				justify-content: space-evenly;
+				align-items: center;
+				text-align: left;
 			}
 		</style>
 	</head>
@@ -42,17 +76,25 @@
 				<img src="assets/moon.svg" alt="" />
 			</div>
 		</div>
-		<div>
-			<img src="assets/profile-photo_mobile.png" alt="" />
+		<div class="profile">
+			<img
+				class="profile-pic"
+				src="assets/profile-photo_mobile.png"
+				alt=""
+			/>
 			<div class="text">
 				<div>
-					<h1>JOSEPH OCHEGO NYABUTO</h1>
-					<p>FRONTEND DEVELOPER | UI/UX DESIGNER | WRITER</p>
+					<h1 class="name">JOSEPH OCHEGO NYABUTO</h1>
+					<p class="titles">
+						FRONTEND DEVELOPER | UI/UX DESIGNER | WRITER
+					</p>
 				</div>
-				<div>
-					<svg />
-					"Passionate about building intuitive digital experiences and
-					writing impactful content"
+				<div class="quote">
+					<img src="assets/line.svg" alt="" />
+					<p>
+						"Passionate about building intuitive digital experiences
+						and writing impactful content"
+					</p>
 				</div>
 				<div>
 					<p>12:56:07 <span>UTC</span></p>
@@ -65,9 +107,9 @@
 						<i></i>
 						<i></i>
 					</div>
-					<p>ochegoatwork@gmail.com</p>
+					<p>✉️ ochegoatwork@gmail.com</p>
 				</div>
-				<p>Kericho, Kenyas</p>
+				<p>📍 Kericho, Kenyas</p>
 			</div>
 		</div>
 	</body>
