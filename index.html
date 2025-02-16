@@ -5,12 +5,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Smart Profile</title>
 		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<style>
+			* {
+				font-family: "Poppins";
+			}
 			body {
 				margin: 0 auto;
 				border: 10px solid white;
 				background-color: rgb(225, 225, 225);
-				height: 100vh;
+				max-height: 100dvh;
 				text-align: center;
 			}
 			.page-header {
@@ -28,6 +34,7 @@
 				padding: 0.5rem 1rem;
 				background-color: rgb(217, 217, 217);
 				border-radius: 30px;
+				color: #405866;
 			}
 			.profile {
 				display: flex;
@@ -51,20 +58,39 @@
 			.name {
 				font-size: 1.2rem;
 				font-weight: 700;
+				color: #405866;
 			}
 
 			.titles {
 				font-size: 0.7rem;
+				color: #555353;
 			}
 
 			.quote {
 				display: flex;
-				gap: 0.5rem;
-				max-width: 65%;
+				gap: 1rem;
+				max-width: 90%;
 				align-self: center;
 				justify-content: space-evenly;
 				align-items: center;
 				text-align: left;
+				color: #516571;
+			}
+			.socials {
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				gap: 1.5rem;
+				
+				& img {
+					max-width: 80%;
+				}
+			}
+			.time {
+				color: #343F46;
+			}
+			.email, .location {
+				color: #343F46;
 			}
 		</style>
 	</head>
@@ -72,7 +98,7 @@
 	<body>
 		<div class="page-header">
 			<div class="theme-toggle">
-				<span>Dark</span>
+				<span><strong>Dark</strong></span>
 				<img src="assets/moon.svg" alt="" />
 			</div>
 		</div>
@@ -90,26 +116,26 @@
 					</p>
 				</div>
 				<div class="quote">
-					<img src="assets/line.svg" alt="" />
+					<img class="line" src="assets/line.svg" alt="" />
 					<p>
 						"Passionate about building intuitive digital experiences
 						and writing impactful content"
 					</p>
 				</div>
-				<div>
+				<div class="time">
 					<p>12:56:07 <span>UTC</span></p>
 					<p>Monday, 3rd February 2025</p>
 				</div>
 				<div>
-					<div>
-						<i></i>
-						<i></i>
-						<i></i>
-						<i></i>
+					<div class="socials">
+						<img src="assets/twitter.svg" alt="">
+						<img src="assets/tiktok.svg" alt="">
+						<img src="assets/linkedin.svg" alt="">
+						<img src="assets/github.svg" alt="">
 					</div>
-					<p>✉️ ochegoatwork@gmail.com</p>
+					<p class="email">✉️ ochegoatwork@gmail.com</p>
 				</div>
-				<p>📍 Kericho, Kenyas</p>
+				<p class="location">📍 Kericho, Kenya</p>
 			</div>
 		</div>
 	</body>
